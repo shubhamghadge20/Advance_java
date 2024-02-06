@@ -1,0 +1,13 @@
+package jdbc;
+
+import java.sql.*;
+
+public class Demo_1 {
+	
+	public static void main(String[] args)throws ClassNotFoundException, SQLException {
+		Class.forName("commysql.cj.jdbc.Driver");
+		Connection con =DriverManager.getConnection("jdbc:mysql://localhost::3306/mydata?useSSl=false","root","Satara@123");
+		
+	}
+
+}

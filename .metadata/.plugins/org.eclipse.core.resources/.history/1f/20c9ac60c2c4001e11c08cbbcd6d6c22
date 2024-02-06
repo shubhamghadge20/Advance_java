@@ -1,0 +1,11 @@
+package jdbc;
+
+public class Connection {
+	
+	public static void main(String[] args)throws ClassNotFoundException {
+		Class.forName("commysql.cj.jdbc.Driver");
+		Connection
+		
+	}
+
+}
