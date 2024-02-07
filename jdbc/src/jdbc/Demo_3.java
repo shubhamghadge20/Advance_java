@@ -27,5 +27,5 @@ public class Demo_3 {
 	  }
 
 	}
-// retrive specific record from table
+// retrive specific record from table using statement
 

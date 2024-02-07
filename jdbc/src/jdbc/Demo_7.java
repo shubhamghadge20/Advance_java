@@ -35,3 +35,4 @@ public class Demo_7 {
 	}
 
 }
+//add value to the table through the input from user
