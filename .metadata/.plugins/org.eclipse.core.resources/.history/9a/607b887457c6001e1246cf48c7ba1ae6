@@ -1,0 +1,19 @@
+package jdbc;
+
+import java.sql.*;
+
+
+public class Demo_11 {
+
+	public static void main(String[] args) {
+		try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/info?autoReconnect=true&useSSL=false", "root", "Satara@123");
+			     CallableStatement cst = con.prepareCall("{call proc_stud4()}")) {
+			    cst.executeQuery();
+			} catch (Exception e) {
+			    e.printStackTrace();
+			}
+
+
+	}
+
+}

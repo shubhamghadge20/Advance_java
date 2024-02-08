@@ -1,0 +1,32 @@
+package jdbc;
+
+import java.sql.*;
+import java.util.*;
+
+public class Demo_14 {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/info?autoReconnect=true&useSSL=false", "root", "Satara@123");
+           
+            Scanner sc = new Scanner(System.in);
+            int n1= sc.nextInt();
+            int n2=sc.nextInt();
+            
+           CallableStatement cst = con.prepareCall("{?=call addno(?,?)}");
+           cst.registerOutParameter(2, java.sql.Types.INTEGER);
+           cst.setInt(2,n2);
+           cst.setInt(3, n2);
+           cst.execute();
+           System.out.println("Addition"+cst.getInt(1));
+           con.close();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
