@@ -1,3 +1,4 @@
+//call procedure for show table
 package jdbc;
 
 import java.sql.*;
@@ -27,4 +28,3 @@ public class Demo_11 {
 	}
 
 }
-//call procedure for show table

@@ -1,3 +1,4 @@
+//retrive specific record from table using prepared statement
 package jdbc;
 
 import java.sql.*;
@@ -32,4 +33,3 @@ public class Demo_4 {
 	}
 
 }
-//retrive specific record from table using prepared statement

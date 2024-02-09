@@ -1,3 +1,4 @@
+//insert values into table
 package jdbc;
 
 import java.sql.Connection;
@@ -29,4 +30,4 @@ public class Demo_6 {
 	}
 
 }
-//insert values into table
+

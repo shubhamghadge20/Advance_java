@@ -1,3 +1,4 @@
+//delete query using java
 package jdbc;
 
 import java.sql.Connection;
@@ -34,4 +35,4 @@ public class Demo_9 {
 
 	}
 }
-//delete query using java
+

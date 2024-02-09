@@ -1,3 +1,4 @@
+//create table
 package jdbc;
 import java.sql.*;
 public class Demo_5 {
@@ -22,4 +23,4 @@ public class Demo_5 {
 
 }
 
-//create table
+

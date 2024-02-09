@@ -1,3 +1,4 @@
+ //using procedure insert data
 package jdbc;
 
 import java.sql.*;
@@ -29,4 +30,3 @@ public class Demo_10 {
         }
     }
 }
- //using procedure insert data

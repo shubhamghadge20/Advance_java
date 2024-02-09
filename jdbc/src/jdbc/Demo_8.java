@@ -1,3 +1,4 @@
+//update query in java
 package jdbc;
 import java.sql.*;
 import java.util.*;
@@ -35,4 +36,3 @@ public class Demo_8 {
 	}
 
 }
-//update query in java

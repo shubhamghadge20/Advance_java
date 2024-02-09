@@ -1,3 +1,4 @@
+//simple connection
 package jdbc;
 
 import java.sql.*;

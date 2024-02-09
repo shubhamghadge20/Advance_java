@@ -1,3 +1,4 @@
+//write a procedure to update name and marks using id not run
 package jdbc;
 
 import java.sql.*;
@@ -32,4 +33,3 @@ public class Demo_12 {
         }
     }
 }
-//write a procedure to update name and marks using id

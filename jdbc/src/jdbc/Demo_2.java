@@ -1,3 +1,4 @@
+//retrive data from database and display it on console
 package jdbc;
 
 import java.sql.*;
@@ -23,4 +24,3 @@ public class Demo_2 {
         }
     }
 }
-//retrive data from database and display it on console

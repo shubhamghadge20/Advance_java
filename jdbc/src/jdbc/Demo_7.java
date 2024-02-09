@@ -1,3 +1,4 @@
+//add value to the table through the input from user
 package jdbc;
 
 import java.sql.*;
@@ -35,4 +36,3 @@ public class Demo_7 {
 	}
 
 }
-//add value to the table through the input from user
