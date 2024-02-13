@@ -27,7 +27,6 @@ public class Demo_15 {
             cst.setString(2, city);
             cst.execute();
 
-           
             System.out.println("Average = " + cst.getInt(1));
 
           

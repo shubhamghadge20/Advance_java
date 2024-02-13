@@ -1,3 +1,4 @@
+// retrive specific record from table using statement
 package jdbc;
 
 import java.sql.*;
@@ -27,5 +28,5 @@ public class Demo_3 {
 	  }
 
 	}
-// retrive specific record from table using statement
+
 
