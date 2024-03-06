@@ -24,7 +24,7 @@ public class ViewServlet extends HttpServlet {
 		List<Student>list=StudentDAO.showStud();
 		
 		out.print("<table border='1' width='100%'>");
-		out.print("<tr><td>Rollno</td><td>Name</td><td>City</td><td>Delete</td></tr>");
+		out.print("<tr><td>Rollno</td><td>Name</td><td>City</td><td>Delete<td>edit</td></tr>");
 		for(Student s:list) {
 			out.print("<tr><td>" + s.getRollno() + "</td><td>" + s.getName() + "</td><td>" + s.getCity() + "</td><td><a href='DeleteServlet?id=" + s.getRollno() + "'>Delete</a></td></tr>");
 

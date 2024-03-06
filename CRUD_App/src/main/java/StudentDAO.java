@@ -57,4 +57,41 @@ public class StudentDAO {
         }
         return list;
     }
+    
+    public static int DelStud(int rno)
+	{	
+		int res=0;
+		try
+		{
+			con=StudentDAO.getConnection();
+			PreparedStatement pst=con.prepareStatement("delete from stud where rollno=?");
+			pst.setInt(1, rno);
+			pst.executeUpdate();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return res;
+	}
+	
+	public static int UpdateStud(Student s)
+	{
+		int res=0;
+		try
+		{
+			con=StudentDAO.getConnection();
+			PreparedStatement pst=con.prepareStatement("update stud set name=?,city=? where rollno=?");
+			pst.setString(1, s.getName());
+			pst.setString(2, s.getCity());
+			pst.setInt(3, s.getRollno());
+			res=pst.executeUpdate();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return res;
+	}
+	
 }
